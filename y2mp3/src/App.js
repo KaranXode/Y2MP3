@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+// import bg from '../src/Assets/Image/cool-background.png';
 import './App.css';
+import Y2MP3 from './Components/Y2/Y2MP3';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>s/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Y2MP3/>
+       {/* <img src={bg}  alt="logo" /> */}
     </div>
   );
 }
