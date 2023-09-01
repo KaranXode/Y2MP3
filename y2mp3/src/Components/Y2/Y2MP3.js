@@ -31,14 +31,14 @@ function Y2MP3() {
   return (
     <>
       <div className="youtube-main ">
-        <h1 className="youtube-main_title">Youtube To MP3 Downloader</h1>
+        <h1 className="youtube-main_title"><span className="highlight">Youtube</span> To <span className="highlight">MP3</span> Downloader</h1>
         <p className="youtube-main_description">
-          Transform YouTube videos into MP3s in just a few clicks!
+          Transform <span>YouTube videos into MP3s</span> in just a few clicks!
         </p>
         <form onSubmit={handleSubmit} className="form">
           <input
             ref={inputUrlRef}
-            type="text"
+            type="search"
             placeholder="Paste a Youtube video URL link..."
             className="form_input"
           ></input>
