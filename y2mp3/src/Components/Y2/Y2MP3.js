@@ -1,6 +1,7 @@
 import { React, useRef, useState } from "react";
 import { youtube_parser } from "../../Utils";
 import axios from "axios";
+import { TypeAnimation } from "react-type-animation";
 
 function Y2MP3() {
   const inputUrlRef = useRef();
@@ -26,14 +27,31 @@ function Y2MP3() {
       .catch((err) => console.log(err));
 
     inputUrlRef.current.value = "";
+    
   };
+
 
   return (
     <>
       <div className="youtube-main ">
-        <h1 className="youtube-main_title"><span className="highlight">Youtube</span> To <span className="highlight">MP3</span> Downloader</h1>
+        <h1 className="youtube-main_title">
+          <span className="highlight">Youtube</span> To{" "}
+          <span className="highlight">MP3</span> Downloader
+        </h1>
         <p className="youtube-main_description">
-          Transform <span>YouTube videos into MP3s</span> in just a few clicks!
+          <TypeAnimation
+            sequence={[
+              "Transform YouTube videos into MP3 in just a few clicks! ",
+              1000,
+              "Transform YouTube videos into MP3 in just a few clicks!",
+              1000,
+              "videos into MP3 in just a few clicks!",
+              1000,
+            ]}
+            speed={50}
+            repeat={Infinity}
+            
+          />
         </p>
         <form onSubmit={handleSubmit} className="form">
           <input
@@ -42,10 +60,17 @@ function Y2MP3() {
             placeholder="Paste a Youtube video URL link..."
             className="form_input"
           ></input>
-          <button type="submit" className="form_button">Search</button>
+          <button type="submit" className="form_button">
+            Search
+          </button>
         </form>
         {urlResult ? (
-          <a target="_blank" href={urlResult} rel="noreferrer" className="download_btn">
+          <a
+            target="_blank"
+            href={urlResult}
+            rel="noreferrer"
+            className="download_btn"
+          >
             Download
           </a>
         ) : (
