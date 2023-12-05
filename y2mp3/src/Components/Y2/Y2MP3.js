@@ -6,6 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 function Y2MP3() {
   const inputUrlRef = useRef();
   const [urlResult, setUrlResult] = useState(null);
+  const [title,setTitle] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -45,7 +46,7 @@ function Y2MP3() {
               1000,
               "Transform YouTube videos into MP3 in just a few clicks!",
               1000,
-              "videos into MP3 in just a few clicks!",
+              "Videos into MP3 in just a few clicks!",
               1000,
             ]}
             speed={50}
@@ -65,6 +66,8 @@ function Y2MP3() {
           </button>
         </form>
         {urlResult ? (
+         <>
+         <h4>{setTitle}</h4>
           <a
             target="_blank"
             href={urlResult}
@@ -73,6 +76,7 @@ function Y2MP3() {
           >
             Download
           </a>
+         </>
         ) : (
           ""
         )}

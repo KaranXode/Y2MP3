@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       {/* <ConfRoute/> */}
-      <div className="app">
+      <div className="app gradient-background">
         <Header />
       
         <div>

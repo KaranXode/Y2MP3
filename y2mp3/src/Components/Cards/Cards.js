@@ -7,7 +7,7 @@ export default function Cards(props) {
         <div className="Card-main_ic">
           <img src={props.ic} alt="hq" height="64px" width="64px"  />
         </div>
-        <div className="pt-80">
+        <div className="Card-title">
           <div className="Card-main_title">{props.title}</div>
           <div className="Card-main_content">{props.content}</div>
         </div>

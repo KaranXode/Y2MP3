@@ -1,5 +1,6 @@
 
 @import url(https://db.onlinewebfonts.com/c/91d3afe918937141b6ae8e43b1005bc8?family=Sharp+Grotesk+Book+25+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 /* @import 'bootstrap/dist/css/bootstrap.css'; */
 
 * {
@@ -14,12 +15,6 @@
 
 body {
   font-family: "Sharp Grotesk Book 25 Regular";
-  /* color: white;
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  ); */
+  color: #fff;
 }
+

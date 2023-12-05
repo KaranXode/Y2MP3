@@ -3,14 +3,17 @@ import YT from "../../Assets/SVG/logo.svg";
 function Header() {
   return (
     <>
-      <div className="nav">
+      <div className="nav gradient-background ">
         <div className="header-logo">
         <a href="./" className="header-logo">
-          <img src={YT} alt="logo" />
-          <h2 className="highlight">Y2MP3</h2>
+          <img src={YT} alt="logo" className="img-logo" />
+          <h2 className="logo-name">Y2MP3</h2>
           </a>
         </div>
         <div className="nav-brand">
+        <a href="./" className="nav-link">
+            Home
+          </a>
           <a href="./" className="nav-link">
             How It's Works
           </a>
@@ -22,9 +25,6 @@ function Header() {
           <a href="./" className="nav-link">
             Contact
           </a>
-        </div>
-        <div>
-          <button className="download_btn">Log In</button>
         </div>
       </div>
     </>
