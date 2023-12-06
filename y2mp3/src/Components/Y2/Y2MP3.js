@@ -61,7 +61,7 @@ function Y2MP3() {
             placeholder="Paste a Youtube video URL link..."
             className="form_input"
           ></input>
-          <button type="submit" className="form_button">
+          <button type="submit" className="rotate-button">
             Search
           </button>
         </form>
@@ -80,6 +80,7 @@ function Y2MP3() {
         ) : (
           ""
         )}
+
       </div>
     </>
   );
