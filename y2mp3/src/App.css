@@ -272,7 +272,7 @@
 }
 @media screen and (max-width: 768px) {
   .app {
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
   .header-logo {
     font-size: 14px;
@@ -281,19 +281,30 @@
     display: none;
   }
   .youtube-main_title {
-    font-size: 32px;
+    font-size: 28px;
   }
   .youtube-main_description {
-    font-size: 20px;
+    font-size: 16px;
+    min-height: 42px;
   }
   .Card-main {
     width: 340px;
+    flex-direction: column;
+  }
+  .Card-title{
+    text-align: center;
   }
   .Card-main_content {
     font-size: 14px;
   }
   .Card-main_title {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .button{
+    font-size: 10px !important;
+  }
+  .form {
+    padding: 0 1rem;
   }
 }
 
