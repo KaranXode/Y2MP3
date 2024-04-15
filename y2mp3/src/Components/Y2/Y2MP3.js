@@ -28,7 +28,6 @@ function Y2MP3() {
       .catch((err) => console.log(err));
 
     inputUrlRef.current.value = "";
-    
   };
 
 
@@ -36,7 +35,7 @@ function Y2MP3() {
     <>
       <div className="youtube-main ">
         <h1 className="youtube-main_title">
-          <span className="highlight">Youtube</span> To{" "}
+          <span className="highlight">Youtube</span> To
           <span className="highlight">MP3</span> Downloader
         </h1>
         <p className="youtube-main_description">
